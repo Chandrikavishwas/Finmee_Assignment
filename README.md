@@ -1,6 +1,7 @@
 # Finmee_Assignment
 This project consists of three main pages: a form page, a sortable list page, and an FAQ accordion page. The form page allows users to input their name, email, and message, which are then stored in local storage and displayed on the sortable list page. The FAQ accordion page provides answers to frequently asked questions.
 # Folder Structure
+<img width="125" alt="image" src="https://github.com/user-attachments/assets/07f6a92d-d0fd-4737-a68e-b46256854129" />
 
 Features
 - Form page with validation and submission handling
