@@ -1,0 +1,61 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #333;
+  color: #fff;
+  padding: 30px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+details {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+summary {
+  cursor: pointer;
+  user-select: none;
+  position: relative;
+}
+
+summary::after {
+  content: "+ ";
+  font-size: 18px;
+  position: absolute;
+  right: 0;
+}
+
+details[open] summary::after {
+  content: "x ";
+  font-size: 18px;
+}
+
+details p {
+  margin-top: 10px;
+}
