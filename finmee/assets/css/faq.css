@@ -3,59 +3,93 @@ body {
   margin: 0;
   padding: 0;
 }
-
 nav {
   background-color: #333;
   color: #fff;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
+  border-radius: 10px 10px 0 0;
 }
-
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
 nav a {
   color: #fff;
+  font-size: 1.2rem;
   text-decoration: none;
   margin: 0 10px;
+  padding: 5px 0;
+  display: inline-block;
 }
-
 nav a:hover {
   color: #ccc;
 }
-
 .container {
   max-width: 800px;
+  width: 90%;
   margin: 40px auto;
   padding: 20px;
   background-color: #f9f9f9;
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
 }
-
+h1 {
+  margin-left: 0 !important;
+  padding: 0;
+  text-align: center;
+}
 details {
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
   padding: 10px;
 }
-
 summary {
   cursor: pointer;
   user-select: none;
   position: relative;
+  font-weight: bold;
+  padding-right: 20px;
 }
-
 summary::after {
   content: "+ ";
   font-size: 18px;
   position: absolute;
   right: 0;
+  top: 0;
 }
-
 details[open] summary::after {
-  content: "x ";
+  content: "× ";
   font-size: 18px;
 }
-
 details p {
   margin-top: 10px;
+  background-color: #e7e5e5;
+  padding: 8px;
+  border-radius: 3px;
+}
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align:center;
+    display:block;
+  }
+
+  nav a {
+    margin: 10px 0;
+    display:block;
+  }
+  h1 {
+    font-size: 1.5rem;
+  }
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
 }

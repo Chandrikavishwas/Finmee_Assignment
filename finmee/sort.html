@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Document</title>
-  <link rel="stylesheet" href="./assets/css/sort.css">
+  <link rel="stylesheet" href="./assets/css/sort.css" />
 </head>
 <body>
+
   <nav>
-    <a href="./index.html">Form</a>
-    <a href="./sort.html">Sort</a>
-    <a href="./faq.html">FAQ</a>
+    <div class="nav">
+      <div><em><h1>NTWIST</h1></em></div>
+      <div style="margin-top:20px;">
+        <a href="./index.html">Form</a>
+        <a href="./sort.html">Sort</a>
+        <a href="./faq.html">FAQ</a>
+      </div>
+    </div>
   </nav>
+
   <div class="container">
     <h1>Sortable List</h1>
     <button id="sortBtn">Sort List A-Z</button>
@@ -24,10 +31,11 @@
         </tr>
       </thead>
       <tbody id="list">
-        <!-- Hardcoded list items will be added here -->
+       
       </tbody>
     </table>
   </div>
+  
   <script src="assets/js/sort.js"></script>
 </body>
 </html>

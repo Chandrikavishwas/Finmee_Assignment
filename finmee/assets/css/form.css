@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -12,20 +13,32 @@ body {
   border: 1px solid #ddd;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  box-sizing: border-box;
 }
 
 nav {
   background-color: #333;
   color: #fff;
-  padding: 30px;
+  padding: 20px;
   text-align: center;
   border-radius: 10px 10px 0 0;
 }
 
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
 nav a {
   color: #fff;
+  font-size: 1.2rem;
   text-decoration: none;
   margin: 0 10px;
+  padding: 5px 0;
+  display: inline-block;
 }
 
 nav a:hover {
@@ -41,12 +54,14 @@ label {
   margin-bottom: 10px;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-sizing: border-box; 
 }
 
 button[type="submit"] {
@@ -61,11 +76,34 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color:blue;
+  background-color: blue;
 }
 
-#timeSpent, #confirmationMessage {
+#timeSpent,
+#confirmationMessage {
   font-size: 16px;
   font-weight: bold;
   margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .nav {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align:center;
+    display:block;
+  }
+
+  nav a {
+    margin: 10px 0;
+    display:block;
+  }
+  h1 {
+    margin-left: 0 !important;
+    text-align: center;
+  }
+
+  .container {
+    margin: 20px auto;
+    padding: 15px;
+  }
 }
